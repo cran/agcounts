@@ -24,4 +24,3 @@ NumericMatrix upsampleC(NumericMatrix X, double b_fp) {
   }
   return out;
 }
-

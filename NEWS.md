@@ -1,3 +1,21 @@
+# agcounts 0.7.0
+* Fix problem with agread as it was not evaluating the `tz` argument
+* Add cpp14 requirement to work with RcppArmadillo in `agcalibrate`
+* Update parser "pygt3x" to work with idle sleep mode ouput from actigraph/pygt3x in v0.7.1
+
+# agcounts 0.6.9
+* Added debugging capabilities to C++ code and additional arguments to control spherecrit, sdcriter, and minloadcrit within the `gcalibrateC` function. Thanks to John Muschelli for the contribution!
+
+# agcounts 0.6.8
+* Fix issue #20 related to C++ compiling by adding the `Rcpp` plugin for C++ 11.
+* Update C++ code for `gcalibrateC` to resolve issue when there are NaN values in sphere data (issue #35)
+* Resolve issue #36 when `calErrorEnd` never gets below 0.01.
+* Change minloadcrit from 72 to 168 as recommended in issue #34
+
+# agcounts 0.6.7
+* Update `agcalibrate` to speed up function by first converting to a `data.table` before merging with the time stamps.
+* Add parameter `imputeTimeGaps` to `agcalibrate` for users to decide if zeros are added back after calibration.
+
 # agcounts 0.6.6
 * Prepare agcounts for a CRAN submission
 * Fix problem with `GGIR::g.calibrate` needing `GGIR::g.inspectfile` results.

@@ -1,13 +1,14 @@
 Package: agcounts
 Type: Package
 Title: Calculate 'ActiGraph' Counts from Accelerometer Data
-Version: 0.6.6
+Version: 0.7.0
 Authors@R: c(
     person(c("Brian", "C."), "Helsel", email = "bhelsel@kumc.edu", role = c("aut", "cre")),
     person(c("Paul", "R."), "Hibbing", role = "ctb"),
     person(c("Robert N."), "Montgomery", role = "ctb"),
     person(c("Eric D."), "Vidoni", role = "ctb"),
     person("Jonathan", "Clutton", role = "ctb"),
+    person("John", "Muschelli", role = "ctb"),
     person("University of Kansas", role = "cph")
     )
 Description: Calculate 'ActiGraph' counts from the X, Y, and Z axes of a triaxial 
@@ -18,22 +19,25 @@ Description: Calculate 'ActiGraph' counts from the X, Y, and Z axes of a triaxia
 Depends: R (>= 3.5.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
-RoxygenNote: 7.3.1
-Imports: data.table, gsignal, lubridate, magrittr, Rcpp, GGIR, stats,
-        utils, zoo, reticulate, dplyr, stringr, ggplot2, reactable,
-        shiny, bslib, read.gt3x, DBI, RSQLite
+Imports: data.table, gsignal, lubridate, magrittr, GGIR, stats, utils,
+        zoo, reticulate, dplyr, stringr, ggplot2, reactable, shiny,
+        bslib, read.gt3x, DBI, RSQLite
 Suggests: parallel, devtools, foreach, testthat (>= 3.0.0), shinytest2,
         covr
 Config/testthat/edition: 3
 LinkingTo: Rcpp, RcppArmadillo
+URL: https://github.com/bhelsel/agcounts
+BugReports: https://github.com/bhelsel/agcounts/issues
+Config/roxygen2/version: 8.0.0
 NeedsCompilation: yes
-Packaged: 2024-02-28 18:57:14 UTC; bhelsel
+Packaged: 2026-06-01 18:01:50 UTC; bhelsel
 Author: Brian C. Helsel [aut, cre],
   Paul R. Hibbing [ctb],
   Robert N. Montgomery [ctb],
   Eric D. Vidoni [ctb],
   Jonathan Clutton [ctb],
+  John Muschelli [ctb],
   University of Kansas [cph]
 Maintainer: Brian C. Helsel <bhelsel@kumc.edu>
 Repository: CRAN
-Date/Publication: 2024-02-29 20:12:36 UTC
+Date/Publication: 2026-06-01 19:30:12 UTC
